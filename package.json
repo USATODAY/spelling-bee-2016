@@ -1,0 +1,33 @@
+{
+  "name": "spelling-bee-2015",
+  "description": "Updated spelling be for 2015",
+  "version": "0.2.0",
+  "author": {
+    "name": "Chad Palmer",
+    "email": "chadpalmer@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USATODAY/spelling-bee-2015.git"
+  },
+  "scripts": {
+    "postinstall": "bower cache clean && bower install"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^1.5.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-jst": "^1.0.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ftp": "^1.0.1",
+    "grunt-sass": "^1.2.0",
+    "osenv": "^0.1.0",
+    "time-grunt": "^0.3.2"
+  },
+  "keywords": []
+}

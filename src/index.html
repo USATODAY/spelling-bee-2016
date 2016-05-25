@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta property="fb:app_id" content="215046668549694"/>
+    <meta property="og:description" content="Content"/>
+    <meta property="og:image" content="Image">
+    <meta property="og:url" content="URL"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2015 Spelling Bee"/>
+    <title>2015 Spelling Bee</title>
+    <link type="text/css" href="style/project.css" rel="stylesheet"/>
+
+
+    <link rel="shortcut icon" href="http://www.gannett-cdn.com/sites/usatoday/images/favicon.png">
+    <!-- START OMNITURE /// BE SURE TO UPDATE FOR THIS CODE FOR YOUR SPECIFIC PROJECT -->
+
+</head>
+
+<body>
+<header>
+    <iframe id="header" width="100%" height="39" frameborder="0" scrolling="no"
+            src="http://www.usatoday.com/services/cobrand/header/"></iframe>
+</header>
+<article>
+    <div class="page-container">
+        <div class="intro-container section">
+            <h2 class="intro-title">7 Spelling Bee Words</h2>
+
+            <h3 class="intro-sub">Can you spell the tough words? <br/>Test your skills with seven spelling Bee words from
+                past National Spelling Bees.</h3>
+
+            <div class="button intro-button large-button">Begin</div>
+        </div>
+        <div class="spelling-container section hide">
+            <div class="audio-button word-button button">Click to hear <span class="number-string"></span> word</div>
+            <form action="" class="spelling-form">
+                <input type="text" placeholder="Enter your spelling" class="word-input">
+            </form>
+            <div class="audio-buttons">
+                <div class="audio-button button">Definition</div>
+                <div class="audio-button button">Origin</div>
+                <div class="audio-button button">Sentence</div>
+            </div>
+            <div class="check-button button large-button">Check It</div>
+        </div>
+        <div class="correct section hide">
+            <h2>Correct!</h2>
+
+            <div class="result-buttons group">
+                <div class='spelling-button button show'>See Spelling</div>
+                <div class="next-button button show">Try another</div>
+            </div>
+            <div class="share group">
+                <a class="tshare" href=""><img
+                        src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/twitter.png"
+                        alt="Share" class="social" border="0"></a>
+                <a class="eshare" href=""><img
+                        src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/email.png"
+                        alt="Share" class="social" border="0"></a>
+                <a class="fbshare" href=""><img
+                        src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/facebook.png"
+                        alt="Share" class="social" border="0"></a>
+            </div>
+        </div>
+        <video id="background-quiet" class="bgvideo play" loop
+               poster="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/still.png">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/loop.mp4"
+                    type="video/mp4"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/loop.ogv"
+                    type="video/ogg"/>
+        </video>
+        <video id="background-blur" class="bgvideo" loop
+               poster="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/still.png">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/blur.mp4"
+                    type="video/mp4"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/blur.ogv"
+                    type="video/ogg"/>
+        </video>
+        <video id="background-clap" class="bgvideo"
+               poster="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/still.png">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/clap.mp4"
+                    type="video/mp4"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/clap.ogv"
+                    type="video/ogg"/>
+        </video>
+        <video id="background-laugh" class="bgvideo"
+               poster="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/img/still.png">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/laugh.mp4"
+                    type="video/mp4"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/video/laugh.ogv"
+                    type="video/ogg"/>
+        </video>
+
+        <audio id="word">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-word.mp3"
+                    type="audio/mpeg"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-word.ogg"
+                    type="audio/ogg"/>
+        </audio>
+        <audio id="definition">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.mp3"
+                    type="audio/mpeg"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.ogg"
+                    type="audio/ogg"/>
+        </audio>
+        <audio id="origin">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.mp3"
+                    type="audio/mpeg"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.ogg"
+                    type="audio/ogg"/>
+        </audio>
+        <audio id="sentence">
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.mp3"
+                    type="audio/mpeg"/>
+            <source src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/appoggiatura-definition.ogg"
+                    type="audio/ogg"/>
+        </audio>
+    </div>
+</article>
+<script data-main="js/main" src="require.js"></script>
+<script type="json/staticinfo" class="staticinfo">
+        {"platform": "desktop", "facebook": {"channel_url": "//www.usatoday.com/static/html/channel.html", "app_id": "215046668549694"}, "ads": {"account": "usatoday"}, "share_url": "http://www.usatoday.com/pages/interactives/black-history-dev/"}
+
+
+</script>
+
+</body>
+</html>
