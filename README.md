@@ -1,6 +1,6 @@
-#spelling-bee-2015
+#spelling-bee-2016
 
-Updated spelling be for 2015
+Updated spelling be for 2016
 
 ##Development
 

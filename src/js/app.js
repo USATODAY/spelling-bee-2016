@@ -91,14 +91,24 @@ define(
             objImmerse.arrVideos[2].addEventListener("ended", function () {
                 objImmerse.setVideos(1);
                 objImmerse.arrNextButton.addClass("show");
-                Analytics.trackEvent("videoComplete" + objImmerse.currentWord.toString());
+                Analytics.trackEvent("videoCorrectComplete" + objImmerse.currentWord.toString());
             });
 
             objImmerse.arrVideos[3].addEventListener("ended", function () {
                 objImmerse.setVideos(1);
                 objImmerse.arrNextButton.addClass("show");
-                Analytics.trackEvent("videoComplete" + objImmerse.currentWord.toString());
+                Analytics.trackEvent("videoWrongComplete" + objImmerse.currentWord.toString());
             });
+            objImmerse.arrAudios[4].addEventListener("ended", function () {
+                objImmerse.resetAudioAnswer();
+                Analytics.trackEvent("audioCorrectComplete" + objImmerse.currentWord.toString());
+            });
+
+            objImmerse.arrAudios[5].addEventListener("ended", function () {
+                objImmerse.resetAudioAnswer();
+                Analytics.trackEvent("audioWrongComplete" + objImmerse.currentWord.toString());
+            });
+
             objImmerse.arrSpellingSubmit.submit(function (event) {
                 event.preventDefault();
                 objImmerse.arrCheckButton.trigger("click");
@@ -259,7 +269,23 @@ define(
                 objImmerse.arrVideos[intVideo].play();
                 objImmerse.arrVideos.removeClass("play").eq(intVideo).addClass("play");
                 objImmerse.currentVideo = intVideo;
+            } else if (intVideo > 1) {
+                objImmerse.playAudioAnswer(intVideo + 2);
             }
+        };
+
+        objImmerse.playAudioAnswer = function (intAudio) {
+            if (intAudio == 4) {
+                objImmerse.arrPageContainer.addClass("clap");
+            } else {
+                objImmerse.arrPageContainer.addClass("laugh");
+            }
+            objImmerse.arrAudios[intAudio].play();
+        };
+
+        objImmerse.resetAudioAnswer = function () {
+            objImmerse.arrPageContainer.removeClass("clap");
+            objImmerse.arrPageContainer.removeClass("laugh");
         };
 
         objImmerse.shuffleAnswers = function (array) {
