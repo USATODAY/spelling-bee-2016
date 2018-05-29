@@ -1,6 +1,6 @@
-#spelling-bee-2016
+#spelling-bee-2018
 
-Updated spelling be for 2016
+Updated spelling bee for 2018
 
 ##Development
 
