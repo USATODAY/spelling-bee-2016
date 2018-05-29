@@ -16,4 +16,6 @@ Once Node is installed, install Grunt with
 and install Bower with 
 `npm install -g bower`
 
-Once those dependencies are set up, from this repository run `npm install`, then run `grunt`
+Once those dependencies are set up, from this repository run `npm install`, then run `npm start`
+
+To deploy, run `npm run deploy`
