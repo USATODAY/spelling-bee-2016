@@ -11,7 +11,10 @@
     "url": "https://github.com/USATODAY/spelling-bee-2015.git"
   },
   "scripts": {
-    "postinstall": "bower cache clean && bower install"
+    "postinstall": "bower cache clean && bower install",
+    "build": "grunt build",
+    "deploy": "grunt build && cd www && gsutil -m cp -r ./ gs://experiments-www-gannett-cdn-com/experiments/usatoday/2018/spelling-bee && npm run bust-cache",
+    "bust-cache": "curl -X PURGE https://www.gannett-cdn.com/experiments/usatoday/2018/spelling-bee/style/project.css && curl -X PURGE https://www.gannett-cdn.com/experiments/usatoday/2018/spelling-bee/js/main.js"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
